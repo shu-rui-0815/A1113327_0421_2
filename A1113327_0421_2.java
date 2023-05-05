@@ -8,9 +8,8 @@ public class A1113327_0421_2 {
 
         int year = 0, month = 0, day = 0;
         int start = 0, end = 0;
-
-        // 判斷日期格式為 YYYY/MM/DD 或 MM/DD/YYYY
-        if (input.indexOf("/") != -1) { // 日期格式為 YYYY/MM/DD
+        
+        if (input.indexOf("/") != -1) { 
             end = input.indexOf("/");
             year = Integer.parseInt(input.substring(start, end));
             start = end + 1;
@@ -18,7 +17,7 @@ public class A1113327_0421_2 {
             month = Integer.parseInt(input.substring(start, end));
             start = end + 1;
             day = Integer.parseInt(input.substring(start));
-        } else { // 日期格式為 MM/DD/YYYY
+        } else { 
             end = input.indexOf("/");
             month = Integer.parseInt(input.substring(start, end));
             start = end + 1;
